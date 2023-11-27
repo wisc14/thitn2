@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- introduce -->
+    <div id="introduce-myself">
+        <div class="information">
+            <img src="./assets/img/238554c4b68d6ed3379c.jpg" alt="avatar">
+            <h3 class="my-name">Nguyễn Mạnh Hùng</h3>
+            <h3 class="student-code">AT160523</h3>
+        </div>
+        <div class="banner">
+            <h1>MAYONNAISE ON AN ESCULATOR</h1>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content-wrapper">
+
+        <!-- list of exercises -->
+        <div class="table-content">
+            <ul class="content-list">
+                <h2>Menu bài 3</h2>
+                <hr>
+                <li><a href="#">7.1 Các ví dụ</a></li>
+                <li><a href="#">7.2 Thi trắc nghiệm</a></li>
+                <li><a href="#">7.3 Form nhập liệu</a></li>
+                <li><a href="#">7.4 Form nhập liệu 2</a></li>
+                <li><a href="#">7.5 Form đăng ký</a></li>
+                <li><a href="#">7.6 Danh sách nhân sự</a></li>
+                <li><a href="#">7.7 Thực đơn?</a></li>
+                <li><a href="#">7.8 Tab</a></li>
+                <li><a href="#">7.9 Cây</a></li>
+                <li><a href="#">7.10 Máy tính</a></li>
+                <li><a href="#">7.11 Hoạt cảnh</a></li>
+            </ul>
+        </div>
+
+         <!-- exercises -->
+        <div class="main-content">
+             <!-- exercise 1 -->
+            <div class="ex1">
+                <h3>Câu 1:</h3>
+            <script>
+                var myName = "HUNG";
+                document.write("<b>"+myName+"</b>");
+                document.write("<br>");
+                myName="AT160523";
+                document.write(myName);
+            </script>
+            </div>
+            <!-- exercise 2 -->
+            <div class="ex2">
+                <h3>Câu 2:</h3>
+                <script>
+                    function run(){
+                    var a;
+                    a=window.document.bai1.T1.value;
+                    alert("Số bạn vừa nhập là: "+a);
+                }
+                </script>
+                <form action="" name="bai1">
+                    <input type="text" name="T1">
+                    <input type="button" name="c" value="Test run" onclick="run()">
+                </form>
+            </div>
+            
+             <!-- exercise 3 -->
+            <div class="ex3">
+                <h3>Câu 3:</h3>
+                <script>
+                    function run3(){
+                        var a;
+                        a=window.document.bai3.T3.value*1;
+                        if ((a%2)==0) { alert(a+ " là số chẵn ");}
+                        else {alert(a+" là số lẻ ");}
+                    }
+                </script>
+                <form action="" name="bai3">
+                    <input type="text" name="T3">
+                    <input type="button" name="a" value="Test run" onclick="run3()">
+                </form>
+            </div>
+            <div class="ex4">
+                <h3>Câu 4:</h3>
+                <script>
+                    var d = new Date();
+                    var time = d.getHours();
+                    if (time<10)
+                    {
+        
+                    document.write("<b>Good morning</b>");
+                    }
+                    else if (time>=10 && time<16)
+                    {
+                    document.write("<b>Good day</b>");
+                    }
+                    else{
+                    document.write("<b>Hello World!</b>");
+                    }
+                </script>
+                <p>day la vi du su dung cau lenh if..else.</p>
+            </div>
+            <div class="ex5">
+                <h3>Câu 5:</h3>
+                <script>
+                    var d=new Date();
+                    theDay=d.getDay();
+                    switch (theDay)
+                    {
+                    case 5:
+                    document.write("Friday");
+                    break;
+                    case 6:
+                    document.write("Saturday");
+                    break;
+                    case 0:
+                    document.write("Sunday");
+                    break;
+                    default:
+                    document.write("Chuc dau tuan vui ve!");
+                    }
+                </script>
+            </div>
+            <div class="ex6">
+                <h3>Câu 6:</h3>
+                <script>
+                    function disp_confirm(){
+                    var r=confirm("Press a button");
+                    if (r==true) {
+                        document.write("You pressed OK!");
+                        }
+                    else {
+                        document.write("You pressed Cancel!");
+                        }
+                    }
+                </script>
+                <input type="button" onclick="disp_confirm()" value="Display a confirm box" />
+            </div>
+            <div class="ex7">
+                <h3>Câu 7:</h3>
+                <script>
+                    function disp_prompt(){
+                    var name=prompt("VUI LONG NHAP TEN CUA BAN","NGUYEN MANH HUNG");
+                    if (name!=null && name!="")
+                    {
+                    document.write("XIN CHAO " + 
+                    name + "! How are you today?");
+                    }
+                    }
+                </script>
+                <input type="button" onclick="disp_prompt()" value="Display a prompt box" />
+            </div>
+            <div class="ex8">
+                <h3>Câu 8:</h3>
+                <script>
+                    var str="Hello world!";
+                    document.write(str.indexOf("Hello") + "<br />");
+                    document.write(str.indexOf("World") + "<br />");
+                    document.write(str.indexOf("world")+ "<br />");
+                    document.write(str.toUpperCase()+ "<br  />");
+                    document.write(str.length+ "<br />");
+                    document.write(str.replace("w","W") + "<br />");
+                </script>
+            </div>
+            <div class="ex9">
+                <h3>Câu 9:</h3>
+                <script>
+                    var x;
+                    var mycars = new Array();
+                    mycars[0] = "Saab";
+                    mycars[1] = "Volvo";
+                    mycars[2] = "BMW";
+                    for (x in mycars){
+                        document.write(mycars[x] + "<br />");
+                    }
+                </script>
+            </div>
+            <div class="ex10">
+                <h3>Câu 10:</h3>
+                <script>
+                    function timedMsg(){
+                        var t=setTimeout("alert('3 seconds!')",3000);
+                    }
+                </script>
+                <form></form>
+                <input type="button" value="Display timed alertbox!" onClick = "timedMsg()">
+                </form>
+                <p>Click on the button above. An alert box will be displayed after 3 seconds.</p>
+            </div>
+            <div class="ex11">
+                <h3>Bài 11:</h3>
+                <script>
+                    function timedText(){
+                    var t1=setTimeout("window.document.lam.txt.value='2 seconds!'",2000);
+                    var t2=setTimeout("document.getElementById('txt').value='4 seconds!'",4000);
+                    var t3=setTimeout("document.getElementById('txt').value='6 seconds!'",6000);
+                    }
+                </script>
+                <form name=lam>
+                    <input type="button" value="Display timed text!" onClick="timedText()">
+                    <input type="text" id="txt">
+                    </form>                    
+            </div>
+            <div class="ex12">
+                <h3>Bài 12:</h3>
+                <script>
+                    function startTime(){
+                        var today=new Date();
+                        var h=today.getHours();
+                        var m=today.getMinutes();
+                        var s=today.getSeconds();
+                        m=checkTime(m);
+                        s=checkTime(s);
+                        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                        t=setTimeout('startTime()',500); 
+                    }
+                    function checkTime(i){
+                        if (i<10) {
+                            i="0" + i;
+                        }
+                    return i;
+                    }
+                </script>
+                <div onload="startTime()">
+                        <div id="txt"></div>
+                </div>
+                
+            </div>
+            <div class="ex13">
+                <h3>Câu 13:</h3>
+                <script>
+                    function mouseOver(){
+                        document.b1.src ="a.gif";
+                    }
+                    function mouseOut(){
+                        document.b1.src ="b.gif";
+                    }
+                </script>
+                <a href="http://www.dayhoctructuyen.com" target="_blank">
+                <img style="border:0" alt="Chao ban" src="a.gif" name="b1" width="206" height="106" onmouseover="mouseOver()" onmouseout="mouseOut()" ></a>
+            </div>
+            <div class="ex14">
+                <h3>Câu 14:</h3>
+                <script>
+                    var phone=new Array();
+                    phone["lam"] ="090540468";
+                    phone["duc"] ="0905274747";
+                    phone["thinh"] ="0904909086";
+                    phone["hien"] ="0905146560";
+                    phone["daotao"] ="05113519929";
+                    function disphone(thephone,entry){
+                        var num=thephone[entry];  
+                        window.document.myform.numbox.value=num;
+                    }
+                </script>
+                <form name ="myform">
+                    <select 
+                    onChange="disphone(phone,this.options[this.selectedIndex].value);">
+                    <option value="lam"> Lê Thanh Lâm
+                    <option value="duc"> Nguyễn đinh minh Đức
+                    <option value="thinh"> Trần Văn thịnh
+                    <option value="hien"> Đỗ Thế Hiền
+                    <option value="daotao"> Phòng Đào tạo
+                    </select>
+                    <input type="text" name="numbox" value="" disabled >
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        Made by Nguyen Manh Hung.
+    </div>
+
+</body>
+</html>

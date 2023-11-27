@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Thiết kế form nhập liệu cho table LOP, xây dựng các đoạn JS kiểm tra
+dữ liệu đầu vào -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Nhập thông tin lớp</legend>
+            <p>Mã lớp</p>
+            <input type="text" name="malop" id="malop">
+            <p>Tên lớp</p>
+            <input type="text" name="tenlop" id="tenlop">
+            <p>Khóa học</p>
+            <input type="text" name="khoahoc" id="khoahoc">
+            <p>Giáo viên chủ nhiệm</p>
+            <input type="text" name="giaovien" id="giaovien">
+        </fieldset>
+        <button type="submit" onclick="kiemtra()">Thêm</button>
+    </form>
+    <script type="text/javascript">
+        function kiemtra() {
+            var malop = document.getElementById("malop").value;
+            var tenlop = document.getElementById("tenlop").value;
+            var khoahoc = document.getElementById("khoahoc").value;
+            var giaovien = document.getElementById("giaovien").value;
+            if (malop.length >= 6 && /^[a-zA-Z]+$/.test(malop)) {
+                alert("Mã lớp hợp lệ");
+            } else if (malop != "") {
+                alert("Vui lòng nhập mã lớp ít nhất 6 ký tự là chữ cái.");
+            }
+            if (malop == "") {
+                alert("Mã lớp không được để trống");
+            }
+
+            if (tenlop.length <= 50 && /^[a-zA-Z]+$/.test(tenlop)) {
+                alert("Tên lớp hợp lệ");
+            } else if (tenlop != "") {
+                alert("Vui lòng nhập tên lớp dưới 50 kỹ tự là chữ cái.");
+            }
+            if (tenlop == "") {
+                alert("Tên lớp không được để trống");
+            }
+
+            var number = parseInt(khoahoc);
+
+            if (!isNaN(number) && Number.isInteger(number)) {
+                alert("Khóa học hợp lệ");
+            } else if (khoahoc != "") {
+                alert("Khóa học không hợp lệ");
+            }
+            if (khoahoc == "") {
+                alert("Khóa học không được để trống");
+            }
+
+            if (giaovien.length <= 50 && /^[a-zA-Z]+$/.test(giaovien)) {
+                alert("Giáo viên hợp lệ");
+            } else if (giaovien != "") {
+                alert("Vui lòng nhập giáo viên dưới 50 kỹ tự là chữ cái.");
+            }
+            if (giaovien == "") {
+                alert("Giáo viên không được để trống");
+            }
+        }
+    </script>
+</body>
+
+</html>

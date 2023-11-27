@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- introduce -->
+    <div id="introduce-myself">
+        <div class="information">
+            <img src="./assets/img/238554c4b68d6ed3379c.jpg" alt="avatar">
+            <h3 class="my-name">Nguyễn Mạnh Hùng</h3>
+            <h3 class="student-code">AT160523</h3>
+        </div>
+        <div class="banner">
+            <h1>MAYONNAISE ON AN ESCULATOR</h1>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content-wrapper">
+
+        <!-- list of exercises -->
+        <div class="table-content">
+            <ul class="content-list">
+                <h2>Menu bài 3</h2>
+                <hr>
+                <li><a href="#">7.1 Các ví dụ</a></li>
+                <li><a href="#">7.2 Thi trắc nghiệm</a></li>
+                <li><a href="#">7.3 Form nhập liệu</a></li>
+                <li><a href="#">7.4 Form nhập liệu 2</a></li>
+                <li><a href="#">7.5 Form đăng ký</a></li>
+                <li><a href="#">7.6 Danh sách nhân sự</a></li>
+                <li><a href="#">7.7 Thực đơn?</a></li>
+                <li><a href="#">7.8 Tab</a></li>
+                <li><a href="#">7.9 Cây</a></li>
+                <li><a href="#">7.10 Máy tính</a></li>
+                <li><a href="#">7.11 Hoạt cảnh</a></li>
+            </ul>
+        </div>
+        <!-- exercises -->
+        <div class="main-content">
+            <h1>Điền vào chỗ trống please</h1>
+            <form action="">
+                <div class="form-block">
+                    <label for="name">Họ tên:</label>
+                    <input class="required" type="text" id="name" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="address">Địa chỉ:</label>
+                    <input type="text" id="address" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="gender">Giới tính:</label>
+                    <input type="radio" id="gender" name="gender" required>
+                    <label style="font-weight:100" for="gender">Nam</label>
+                    <input type="radio" id="gender" name="gender" required>
+                    <label style="font-weight:100" for="gender">Nữ</label>
+                </div>
+
+                <div class="form-block">
+                    <label for="dob">Ngày sinh:</label>
+                    <input class="required" type="date" id="dob" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="email">Email:</label>
+                    <input class="required" type="email" id="email" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="telephone">Điện thoại:</label>
+                    <input type="tel" id="telephone" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="course-reg">Khóa đăng kí:</label>
+                    <input type="checkbox" id="course-reg" name="course-reg" value="Nam" required>
+                    <label style="font-weight:100" for="course-reg">Tiếng anh</label>
+                    <input type="checkbox" id="course-reg" name="course-reg" required>
+                    <label style="font-weight:100" for="course-reg">Quản trị</label>
+                    <input type="checkbox" id="course-reg" name="course-reg" required>
+                    <label style="font-weight:100" for="course-reg">CNTT</label>
+                </div>
+
+                <div class="form-block">
+                    <label for="user-name">Tên sử dụng:</label>
+                    <input class="required" type="text" id="user-name" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="password">Mật khẩu</label>
+                    <input class="required" type="password" id="password" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="re-password">Gõ lại mật khẩu</label>
+                    <input class="required" type="password" id="re-password" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="note">Ghi chú</label>
+                    <textarea name="note" id="note" cols="60" rows="5"></textarea>
+                </div>
+                <div class="btn-block">
+                    <input type="button" value="Chấp nhận" onclick="validate()">
+                    <input type="button" value="Bỏ qua" id="skip" onclick="">
+                </div>
+
+            </form>
+            <!-- footer -->
+            <div id="footer">
+                Made by Nguyen Manh Hung.
+            </div>
+
+</body>
+
+</html>

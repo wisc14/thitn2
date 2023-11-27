@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- introduce -->
+    <div id="introduce-myself">
+        <div class="information">
+            <img src="./assets/img/238554c4b68d6ed3379c.jpg" alt="avatar">
+            <h3 class="my-name">Nguyễn Mạnh Hùng</h3>
+            <h3 class="student-code">AT160523</h3>
+        </div>
+        <div class="banner">
+            <h1>MAYONNAISE ON AN ESCULATOR</h1>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content-wrapper">
+
+        <!-- list of exercises -->
+        <div class="table-content">
+            <ul class="content-list">
+                <h2>Menu bài 3</h2>
+                <hr>
+                <li><a href="#">7.1 Các ví dụ</a></li>
+                <li><a href="#">7.2 Thi trắc nghiệm</a></li>
+                <li><a href="#">7.3 Form nhập liệu</a></li>
+                <li><a href="#">7.4 Form nhập liệu 2</a></li>
+                <li><a href="#">7.5 Form đăng ký</a></li>
+                <li><a href="#">7.6 Danh sách nhân sự</a></li>
+                <li><a href="#">7.7 Thực đơn?</a></li>
+                <li><a href="#">7.8 Tab</a></li>
+                <li><a href="#">7.9 Cây</a></li>
+                <li><a href="#">7.10 Máy tính</a></li>
+                <li><a href="#">7.11 Hoạt cảnh</a></li>
+            </ul>
+        </div>
+        <!-- exercises -->
+        <div class="main-content">
+            <h1>Điền vào chỗ trống please</h1>
+            <form action="">
+                <div class="form-block">
+                    <label for="class-code">Mã lớp</label>
+                    <input type="text" id="class-code" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="class-name">Tên lớp</label>
+                    <input type="text" id="class-name" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="course">Khóa học</label>
+                    <input type="text" id="course" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="teacher">Giáo viên chủ nhiệm</label>
+                    <input type="text" id="teacher" required>
+                </div>
+               <input type="button" value="Submit" onclick="validate()">
+            </form>
+            
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            Made by Nguyen Manh Hung.
+        </div>
+
+</body>
+
+</html>

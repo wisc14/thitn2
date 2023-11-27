@@ -1,0 +1,26 @@
+body{
+	
+	display: flex;
+	
+	align-items: center;
+	flex-direction: column;
+}
+#tbl {
+	border: solid 1px #000000;
+	border-collapse:collapse;
+}
+#tbl td, th {
+	border: solid 1px #000000;
+}
+#tbl thead {
+	background-color:#59F8FD;
+}
+#tbl tr.oddr {
+	background-color:#CFCACC;
+}
+#tbl tr.evenr {
+	background-color:#6EE720;
+}
+#tbl tr.selectedr {background-color:rgb(252, 255, 102);}
+.nodisplay {display:none;}
+

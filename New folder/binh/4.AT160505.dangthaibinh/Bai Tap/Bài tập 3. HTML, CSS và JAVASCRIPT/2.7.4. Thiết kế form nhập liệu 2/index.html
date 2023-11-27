@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Thiết kế form nhập liệu cho table HOSO, xây dựng các đoạn JS kiểm tra dữ liệu đầu -->
+    <!-- vào -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Nhập thông tin hồ sơ</legend>
+            <p>Mã hồ sơ</p>
+            <input type="text" name="mahoso" id="mahoso">
+            <p>Họ tên</p>
+            <input type="text" name="hoten" id="hoten">
+            <p>Ngày sinh</p>
+            <input type="text" name="ngaysinh" id="ngaysinh">
+            <p>Địa chỉ</p>
+            <input type="text" name="diachi" id="diachi">
+            <p>Lớp</p>
+            <input type="text" name="malop" id="malop">
+            <p>Điểm toán</p>
+            <input type="text" name="diemtoan" id="diemtoan">
+            <p>Điểm lý</p>
+            <input type="text" name="diemly" id="diemly">
+            <p>Điểm hóa</p>
+            <input type="text" name="diemhoa" id="diemhoa">
+        </fieldset>
+        <button type="submit" onclick="kiemtra()">Thêm</button>
+    </form>
+
+    <script type="text/javascript">
+        function kiemtra() {
+            var mahoso = document.getElementById("mahoso").value;
+            var hoten = document.getElementById("hoten").value;
+            var ngaysinh = document.getElementById("ngaysinh").value;
+            var diachi = document.getElementById("diachi").value;
+            var malop = document.getElementById("malop").value;
+            var diemtoan = document.getElementById("diemtoan").value;
+            var diemly = document.getElementById("diemly").value;
+            var diemhoa = document.getElementById("diemhoa").value;
+
+            if (mahoso.length == 8 && /^[a-zA-Z]+$/.test(mahoso)) {
+                alert("Mã hồ sơ hợp lệ");
+            } else if (mahoso != "") {
+                alert("Vui lòng nhập mã hồ sơ dạng 8 ký tự là chữ cái.");
+            }
+            if (mahoso == "") {
+                alert("Mã hồ sơ không được để trống");
+            }
+            if (hoten.length <= 50 && /^[a-zA-Z]+$/.test(hoten)) {
+                alert("Tên lớp hợp lệ");
+            } else if (hoten != "") {
+                alert("Vui lòng nhập họ và tên dưới 50 kỹ tự là chữ cái.");
+            }
+            if (hoten == "") {
+                alert("Họ và tên không được để trống");
+            }
+            if (ngaysinh.length <= 50 && /^[a-zA-Z]+$/.test(ngaysinh)) {
+                alert("Ngày sinh hợp lệ");
+            }
+            if (ngaysinh == "") {
+                alert("Ngày sinh không được để trống");
+            }
+            if (diachi.length <= 150 && /^[a-zA-Z]+$/.test(diachi)) {
+                alert("Địa chỉ hợp lệ");
+            } else if (diachi != "") {
+                alert("Vui lòng nhập địa chỉ dưới 150 kỹ tự là chữ cái.");
+            }
+            if (diachi == "") {
+                alert("Địa chỉ không được để trống");
+            }
+            if (malop.length == 6 && /^[a-zA-Z]+$/.test(malop)) {
+                alert("Lớp hợp lệ");
+            } else if (malop != "") {
+                alert("Vui lòng nhập lớp dạng 6 ký tự.");
+            }
+            if (malop == "") {
+                alert("Lớp không được để trống");
+            }
+
+            var floatRegex = /^-?\d+(\.\d+)?$/;
+
+            if (floatRegex.test(diemtoan)) {
+                alert("Đã nhập điểm toán");
+            } else if (diemtoan != "") {
+                alert("Vui lòng nhập điểm toán là 1 số dạng float");
+            }
+            if (diemtoan == "") {
+                alert("Điểm toán không được để trống");
+            }
+            if (floatRegex.test(diemly)) {
+                alert("Đã nhập điểm lý");
+            } else if (diemly != "") {
+                alert("Vui lòng nhập điểm lý là 1 số dạng float");
+            }
+            if (diemly == "") {
+                alert("Điểm lý không được để trống");
+            }
+            if (floatRegex.test(diemhoa)) {
+                alert("Đã nhập điểm hóa");
+            } else if (diemhoa != "") {
+                alert("Vui lòng nhập điểm hóa là 1 số dạng float");
+            }
+            if (diemhoa == "") {
+                alert("Điểm hóa không được để trống");
+            }
+        }
+    </script>
+</body>
+
+</html>

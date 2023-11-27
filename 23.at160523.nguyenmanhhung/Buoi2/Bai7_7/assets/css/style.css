@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    height: 2000px;
+}
+/* introduce */
+#introduce-myself {
+    height: 185px;
+    border: 3px solid gray;
+}
+.information{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+.information .my-name {
+
+}
+
+#introduce-myself .information img{
+    display: inline-block;
+    float:left;
+    width: 100px;
+    border-radius: 4px;
+    
+}
+
+#introduce-myself .banner {
+    border-left: 3px solid gray;
+    width: 70%;
+    float: right;
+    height: 182px;
+    
+}
+
+#introduce-myself .banner h1{
+    text-align: center;
+    line-height: 182px;
+}
+
+/* content */
+
+#content-wrapper {
+    padding: 30px;
+}
+
+#content-wrapper .table-content .content-list a{
+    text-decoration: none;
+}
+
+#content-wrapper .table-content .content-list li{
+    list-style-type: none;
+}
+
+#content-wrapper .table-content {
+
+    display: inline-block;
+    width: 20%;
+    /* position: fixed; */
+    padding: 20px 50px;
+    background-color: burlywood;
+    border-radius: 30px;
+    line-height: 25px;
+}
+
+#content-wrapper .main-content {
+    border: 3px solid burlywood;
+    padding: 20px 50px;
+    float: right;
+    width: 75%;
+    border-radius: 25px;
+    line-height: 25px;
+}
+
+#footer {
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+}
+
+/* start coding */
+#menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 30px;
+    background-color: burlywood;
+    width:90%;
+    margin: auto;
+    border-radius: 30px;
+    
+}
+
+#menu div {
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#menu div:hover {
+    border-radius: 30px;
+    background-color: rgb(231, 157, 59);
+}
+
+#menu div.active {
+    background-color: lightgreen;
+}
+
+#title {
+    margin-top: 10px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.information{
+    display: flex;
+}
+
+.myInfo{
+    display: flex;
+    align-items: center;
+}
+.myInfo img{
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.myInfo ul{
+    list-style-type: none;
+}
+
+.myInfo ul li{
+    font-size: 20px;
+    font-weight: bold;
+}
+.banner{
+    display: flex;
+    align-items: center;
+}

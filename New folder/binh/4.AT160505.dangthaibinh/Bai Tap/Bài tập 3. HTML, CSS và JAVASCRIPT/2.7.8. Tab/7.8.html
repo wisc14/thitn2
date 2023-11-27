@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Lập trình tạo trang có các tabs như hình dưới đây. Khi người dùng chọn
+tab nào thì tô xanh tab đó, đồng thời tải một trang tương ứng. Khi người dùng
+đưa chuột qua tab nào chưa được chọn thì tô sáng tab đó. -->
+    <div class="tab">
+        <button type="button" class="tablinks">
+            <a href="/Bài tập 3. HTML. CSS và JAVASCRIPT/2.7.2/2.7.2.html">Tab 1</a>
+        </button>
+        <button type="button" class="tablinks">
+            <a href="/Bài tập 3. HTML. CSS và JAVASCRIPT/2.7.3/7.3.html">Tab 2</a>
+        </button>
+        <button type="button" class="tablinks">
+            <a href="/Bài tập 3. HTML. CSS và JAVASCRIPT//2.7.4/7.4.html">Tab 3</a>
+        </button>
+    </div>
+
+    <style>
+        .tab {
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        
+        .tab button.active {
+            background-color: #ccc;
+        }
+    </style>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>

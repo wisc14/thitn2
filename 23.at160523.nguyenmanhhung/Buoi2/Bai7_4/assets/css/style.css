@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    height: 2000px;
+}
+/* introduce */
+#introduce-myself {
+    height: 185px;
+    border: 3px solid gray;
+}
+.information{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+.information .my-name {
+
+}
+
+#introduce-myself .information img{
+    display: inline-block;
+    float:left;
+    width: 100px;
+    border-radius: 4px;
+    
+}
+
+#introduce-myself .banner {
+    border-left: 3px solid gray;
+    width: 70%;
+    float: right;
+    height: 182px;
+    
+}
+
+#introduce-myself .banner h1{
+    text-align: center;
+    line-height: 182px;
+}
+
+/* content */
+
+#content-wrapper {
+    padding: 30px;
+}
+
+#content-wrapper .table-content .content-list a{
+    text-decoration: none;
+}
+
+#content-wrapper .table-content .content-list li{
+    list-style-type: none;
+}
+
+#content-wrapper .table-content {
+
+    display: inline-block;
+    width: 20%;
+    /* position: fixed; */
+    padding: 20px 50px;
+    background-color: burlywood;
+    border-radius: 30px;
+    line-height: 25px;
+}
+
+#content-wrapper .main-content {
+    border: 3px solid burlywood;
+    padding: 20px 50px;
+    float: right;
+    width: 75%;
+    border-radius: 25px;
+    line-height: 25px;
+}
+
+#footer {
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+}
+
+/* start coding */
+.main-content h1{
+    text-align: center;
+}
+
+.form-block{
+    display: flex;
+    padding: 15px 0;
+}
+
+.form-block > label{
+    display: inline-block;
+    padding: 12px 12px 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-block label{
+    float: left;
+    width: 25%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin: 0 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type=button]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=button]:hover{
+    background-color: #45a049;
+}
+
+.btn-block {
+    display: flex;
+    margin: 50px 150px;
+    justify-content: space-around;
+}
+
+.required {
+    background-color: burlywood;
+}

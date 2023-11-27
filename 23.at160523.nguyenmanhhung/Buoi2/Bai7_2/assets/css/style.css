@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    height: 2000px;
+}
+/* introduce */
+#introduce-myself {
+    height: 185px;
+    border: 3px solid gray;
+}
+.information{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+.information .my-name {
+
+}
+
+#introduce-myself .information img{
+    display: inline-block;
+    float:left;
+    width: 100px;
+    border-radius: 4px;
+    
+}
+
+#introduce-myself .banner {
+    border-left: 3px solid gray;
+    width: 70%;
+    float: right;
+    height: 182px;
+    
+}
+
+#introduce-myself .banner h1{
+    text-align: center;
+    line-height: 182px;
+}
+
+/* content */
+
+#content-wrapper {
+    padding: 30px;
+}
+
+#content-wrapper .table-content .content-list a{
+    text-decoration: none;
+}
+
+#content-wrapper .table-content .content-list li{
+    list-style-type: none;
+}
+
+#content-wrapper .table-content {
+
+    display: inline-block;
+    width: 20%;
+    /* position: fixed; */
+    padding: 20px 50px;
+    background-color: burlywood;
+    border-radius: 30px;
+    line-height: 25px;
+}
+
+#content-wrapper .main-content {
+    border: 3px solid burlywood;
+    padding: 20px 50px;
+    float: right;
+    width: 75%;
+    border-radius: 25px;
+    line-height: 25px;
+}
+
+/* start coding */
+#content-wrapper .main-content #test2,
+#content-wrapper .main-content #test1{
+    padding: 6px;
+}
+
+.btn-handle{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 10px 10px 0 0;
+}
+
+input[type=text] {
+    margin-top: 15px;
+    line-height: 26px;
+    width: 80%;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.main-content .question{
+    margin: 20px 0;
+}
+#exam1{
+    display: none;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+
+#exam2{
+    display: none;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+
+.submit {
+    padding: 6px;
+}
+
+#footer {
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}

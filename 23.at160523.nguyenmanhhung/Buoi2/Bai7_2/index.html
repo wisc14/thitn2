@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- introduce -->
+    <div id="introduce-myself">
+        <div class="information">
+            <img src="./assets/img/238554c4b68d6ed3379c.jpg" alt="avatar">
+            <h3 class="my-name">Nguyễn Mạnh Hùng</h3>
+            <h3 class="student-code">AT160523</h3>
+        </div>
+        <div class="banner">
+            <h1>MAYONNAISE ON AN ESCULATOR</h1>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content-wrapper">
+
+        <!-- list of exercises -->
+        <div class="table-content">
+            <ul class="content-list">
+                <h2>Menu bài 3</h2>
+                <hr>
+                <li><a href="#">7.1 Các ví dụ</a></li>
+                <li><a href="#">7.2 Thi trắc nghiệm</a></li>
+                <li><a href="#">7.3 Form nhập liệu</a></li>
+                <li><a href="#">7.4 Form nhập liệu 2</a></li>
+                <li><a href="#">7.5 Form đăng ký</a></li>
+                <li><a href="#">7.6 Danh sách nhân sự</a></li>
+                <li><a href="#">7.7 Thực đơn?</a></li>
+                <li><a href="#">7.8 Tab</a></li>
+                <li><a href="#">7.9 Cây</a></li>
+                <li><a href="#">7.10 Máy tính</a></li>
+                <li><a href="#">7.11 Hoạt cảnh</a></li>
+            </ul>
+        </div>
+         <!-- exercises -->
+        <div class="main-content">
+            <div class="btn-handle">
+                <button id="test1">TEST 1</button>
+                <button id="test2">TEST 2</button>
+            </div>
+            
+            <div id="exam1">
+                <h1>Question for TEST 1</h1>
+                <div class="question">
+                    <h2>Ex 1. Please select your favorite Web language</h2>
+                    <input type="radio" name="language" value="HTML" >HTML <br>
+                    <input type="radio" name="language" value="CSS" >CSS <br>
+                    <input type="radio" name="language" value="JS" >JavaScript<br>
+                </div>
+                <div class="question">
+                    <h2>Ex 2. Please fill in your age:</h2>
+                    <input type="text">
+                </div>
+                <div class="question">
+                    <h2>Ex 3. Do you love yourself?</h2>
+                    <input type="radio" name="love">Yes<br>
+                    <input type="radio" name="love">No<br>
+                </div>
+                <button class="submit">Submit</button>
+            
+            </div>
+
+            <div id="exam2">
+                <h1>Question for TEST 2</h1>
+                <div class="question">
+                    <h2>Ex 1. Please select your favorite Idol</h2>
+                    <input type="radio" name="language" value="HTML" >Mảia <br>
+                    <input type="radio" name="language" value="CSS" >Kalìa <br>
+                    <input type="radio" name="language" value="JS" >Hâtno<br>
+                </div>
+                <div class="question">
+                    <h2>Ex 2. Please fill in your name:</h2>
+                    <input type="text">
+                </div>
+                <div class="question">
+                    <h2>Ex 3. Do you love me?</h2>
+                    <input type="radio" name="love">Yes<br>
+                    <input type="radio" name="love">No<br>
+                </div>
+                <button class="submit">Submit</button>
+            
+            </div>
+            <script src="app.js"></script>
+            <!-- <script>
+                var btnTest1 = document.getElementById('test1')
+
+                var btnTest2 = document.getElementById('test2')
+
+                btnTest1.onclick = function(){
+                    document.getElementById('exam1').style.display = "block";
+                    document.getElementById('exam2').style.display = "none";
+                }
+
+                btnTest2.onclick = function(){
+                    document.getElementById('exam1').style.display = "none";
+                    document.getElementById('exam2').style.display = "block";
+                }
+            </script> -->
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        Made by Nguyen Manh Hung.
+    </div>
+
+</body>
+</html>

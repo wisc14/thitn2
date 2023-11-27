@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- introduce -->
+    <div id="introduce-myself">
+        <div class="information">
+            <img src="./assets/img/238554c4b68d6ed3379c.jpg" alt="avatar">
+            <h3 class="my-name">Nguyễn Mạnh Hùng</h3>
+            <h3 class="student-code">AT160523</h3>
+        </div>
+        <div class="banner">
+            <h1>MAYONNAISE ON AN ESCULATOR</h1>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content-wrapper">
+
+        <!-- list of exercises -->
+        <div class="table-content">
+            <ul class="content-list">
+                <h2>Menu bài 3</h2>
+                <hr>
+                <li><a href="#" onclick="showIframe('iframe1')">Câu 1 + 2</a></li>
+                <li><a href="#" onclick="showIframe('iframe2')">Câu 3</a></li>
+                <li><a href="#" onclick="showIframe('iframe3')">Câu 4</a></li>
+                <li><a href="#" onclick="showIframe('iframe4')">Câu 5</a></li>
+                <li><a href="#" onclick="showIframe('iframe5')">Câu 6</a></li>
+                <li><a href="#" onclick="showIframe('iframe6')">Câu 7</a></li>
+                <li><a href="#" onclick="showIframe('iframe7')">Câu 8</a></li>
+                <li><a href="#" onclick="showIframe('iframe8')">Câu 9 + 10 + 11</a></li>
+                <!-- <li><a href="#" onclick="showIframe('iframe9')">Câu 12</a></li> -->
+                <li><a href="#" onclick="showIframe('iframe10')">Câu 13</a></li>
+                <li><a href="#" onclick="showIframe('iframe11')">Câu 14</a></li>
+            </ul>
+        </div>
+         <!-- exercises -->
+        <div class="main-content">
+
+            <div id="main" class="content ">
+                <iframe id="iframe1" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_1_2/" style="display:none;"></iframe>
+                <iframe id="iframe2" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_3/index.php?pages=loop" style="display:none;"></iframe>
+                <iframe id="iframe3" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_4/" style="display:none;"></iframe>
+                <iframe id="iframe4" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_5/" style="display:none;"></iframe>
+                <iframe id="iframe5" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_6/" style="display:none;"></iframe>
+                <iframe id="iframe6" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_7/" style="display:none;"></iframe>
+                <iframe id="iframe7" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_8/" style="display:none;"></iframe>
+                <iframe id="iframe8" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_9_10_11/" style="display:none;"></iframe>
+                <!-- <iframe id="iframe9" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_12/" style="display:none;"></iframe> -->
+                <iframe id="iframe10" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_13/" style="display:none;"></iframe>
+                <iframe id="iframe11" src="http://localhost/23.at160523.nguyenmanhhung/23.at160523.nguyenmanhhung/Buoi3/Bai_14/" style="display:none;"></iframe>
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        Made by Nguyen Manh Hung.
+    </div>
+    <script>
+        var currentIframe = null;
+        function showIframe(iframeId) {
+            if (currentIframe !== null) {
+                currentIframe.style.display = 'none';
+            }
+
+            var newIframe = document.getElementById(iframeId);
+            if (newIframe) {
+                newIframe.style.display = 'block';
+                currentIframe = newIframe;
+            }
+        }
+    </script>
+</body>
+</html>
